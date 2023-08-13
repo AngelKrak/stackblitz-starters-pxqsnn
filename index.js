@@ -10,7 +10,7 @@ globalThis.Blob = Blob;
 // Configura el manejo estático de archivos
 app.use(express.static('public')); // Crea una carpeta "public" en el mismo directorio
 
-app.get('/blob', (req, res) => {
+app.get('/', (req, res) => {
   res.header({ 'Access-Control-Allow-Origin': '*' });
 
   // Lee el archivo binario
